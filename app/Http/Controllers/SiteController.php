@@ -13,6 +13,36 @@ class SiteController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        return view('site.index');
+    }
+
+    /**
+     * Return gallery page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function gallery()
+    {
+        return view('site.gallery');
+    }
+
+    /**
+     * Return contacts page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function contacts()
+    {
+        return view('site.contacts');
+    }
+
+    /**
+     * Return about page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function about()
+    {
+        return view('site.about');
     }
 }
