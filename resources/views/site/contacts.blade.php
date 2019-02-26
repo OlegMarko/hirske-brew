@@ -1,4 +1,4 @@
-@extends('layouts.site')
+@extends('layouts.site1')
 
 @section('content')
     <section class="map-container">
