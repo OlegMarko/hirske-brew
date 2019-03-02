@@ -8,8 +8,7 @@
 
     <title>Броварня Гірське | Головна</title>
 
-    <link rel='stylesheet' id='sage/css-css'  href="{{ asset('assets/style.css') }}" type='text/css' media='all' />
-    <script type='text/javascript' src="{{ asset('assets/jquery.js') }}"></script>
+    <link rel='stylesheet' href="{{ asset('assets/style.css') }}" type='text/css' media='all' />
 </head>
 <body class="page">
 
