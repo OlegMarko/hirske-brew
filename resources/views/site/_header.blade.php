@@ -9,6 +9,11 @@
                     </div>
                 </div>
                 <div class="nav-l">
+                    <div id="magic_arrow-left" class="arrow_1">
+                        <div class="figure_arrow_left"></div>
+                        <div class="figure_arrow_main"></div>
+                        <div class="figure_arrow_right"></div>
+                    </div>
                     <ul>
                         <li class="">
                             <a href="{{ url('/') }}">Броварня</a>
@@ -17,11 +22,6 @@
                             <a href="{{ url('/about') }}">Пиво</a>
                         </li>
                     </ul>
-                    <div id="arrow_1-l" class="arrow_1" style="left: 30px;">
-                        <div class="figure_arrow_left"></div>
-                        <div class="figure_arrow_main"></div>
-                        <div class="figure_arrow_right"></div>
-                    </div>
                 </div>
                 <div class="nav-r">
                     <ul>
@@ -32,7 +32,7 @@
                             <a href="{{ url('contacts') }}">Де придбати</a>
                         </li>
                     </ul>
-                    <div id="arrow_1-r" class="arrow_1" style="left: 696px;">
+                    <div id="magic_arrow-right" class="arrow_1">
                         <div class="figure_arrow_left"></div>
                         <div class="figure_arrow_main"></div>
                         <div class="figure_arrow_right"></div>

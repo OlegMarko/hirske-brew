@@ -9,6 +9,9 @@
     <title>Броварня Гірське | Головна</title>
 
     <link rel='stylesheet' href="{{ asset('assets/style.css') }}" type='text/css' media='all' />
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body class="page">
 
