@@ -92,7 +92,7 @@ header .button-container {
     width: 50px;
     height: 46px;
     background-color: #020202;
-    border: 2px solid #c00;
+    border: 2px solid #0c0;
     border-top: none;
 }
 header .header-container .nav-l, header .header-container .nav-r {
@@ -164,8 +164,8 @@ ul {
 }
 header .header-container ul {
     height: 100%;
-    border-top: 1px solid #c00;
-    border-bottom: 1px solid #c00;
+    border-top: 1px solid #0c0;
+    border-bottom: 1px solid #0c0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -257,7 +257,7 @@ body main {
 }
 footer {
     overflow: hidden;
-    color: #c00;
+    color: #0c0;
     font-size: .75rem;
     position: relative;
     background-color: #020202;
@@ -384,7 +384,7 @@ audio, canvas, progress, video {
     -ms-flex-align: center;
     align-items: center;
     color: #fefefe;
-    border: 1px solid #c00;
+    border: 1px solid #0c0;
     background-color: rgba(0, 0, 0, .7);
     z-index: 3;
     box-sizing: border-box;
@@ -607,7 +607,7 @@ ul.slick-dots li button:after {
 }
 .i_mini_arrow {
     width: 77px;
-    height: 30px;
+    height: 77px;
 }
 .i_hop, .i_mini_arrow {
     display: inline-block;

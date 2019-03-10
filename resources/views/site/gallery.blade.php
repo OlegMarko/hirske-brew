@@ -19,12 +19,10 @@
         <div class="gallery_buttons_position">
             <div class="gallery_buttons_wrap">
                 <button class="gallery_slider_next slick-arrow" style="display: block;">
-                    <i class="i_mini_arrow" style="background-image: url(http://jager.if.ua/wp-content/themes/lionline/dist/images/mini_arrow_stroke.svg);"></i>
-                    <i class="i_mini_arrow" style="background-image: url(http://jager.if.ua/wp-content/themes/lionline/dist/images/mini_arrow_no_stroke.svg);"></i>
+                    <i class="i_mini_arrow" style="background-image: url({{ asset('assets/svg/arrow.svg') }});"></i>
                 </button>
                 <button class="gallery_slider_prev slick-arrow" style="display: block;">
-                    <i class="i_mini_arrow" style="background-image: url(http://jager.if.ua/wp-content/themes/lionline/dist/images/mini_arrow_stroke.svg);"></i>
-                    <i class="i_mini_arrow" style="background-image: url(http://jager.if.ua/wp-content/themes/lionline/dist/images/mini_arrow_no_stroke.svg);"></i>
+                    <i class="i_mini_arrow" style="background-image: url({{ asset('assets/svg/arrow.svg') }});"></i>
                 </button>
             </div>
         </div>
