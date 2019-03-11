@@ -45,4 +45,24 @@ class SiteController extends Controller
     {
         return view('site.about');
     }
+
+    /**
+     * Return store page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function store()
+    {
+        return view('site.store');
+    }
+
+    /**
+     * Return car tour page.
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function carTour()
+    {
+        return view('site.car-tour');
+    }
 }

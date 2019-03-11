@@ -13,7 +13,9 @@
 
 Route::get('/', 'SiteController@index');
 Route::get('/about', 'SiteController@about');
-Route::get('/contacts', 'SiteController@contacts');
+Route::get('/store', 'SiteController@store');
 Route::get('/gallery', 'SiteController@gallery');
+Route::get('/contacts', 'SiteController@contacts');
+Route::get('/car-tour', 'SiteController@carTour');
 
 Auth::routes();

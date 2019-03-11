@@ -21,10 +21,16 @@
                         <li class="">
                             <a href="{{ url('/about') }}">Пиво</a>
                         </li>
+                        <li class="">
+                            <a href="{{ url('/store') }}">Магазин</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="nav-r">
                     <ul>
+                        <li class="">
+                            <a href="{{ url('car-tour') }}">Джипінг тур</a>
+                        </li>
                         <li class="">
                             <a href="{{ url('gallery') }}">Галерея</a>
                         </li>
