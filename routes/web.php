@@ -18,4 +18,7 @@ Route::get('/gallery', 'SiteController@gallery');
 Route::get('/contacts', 'SiteController@contacts');
 Route::get('/car-tour', 'SiteController@carTour');
 
+Route::resource('comment', 'CommentController');
+Route::resource('product', 'ProductController');
+
 Auth::routes();
