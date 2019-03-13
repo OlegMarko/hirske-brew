@@ -24,5 +24,7 @@
 @include('site._footer')
 
 <script type='text/javascript' src="{{ asset('assets/script.js') }}"></script>
+
+<script id="dsq-count-scr" src="//hirske.disqus.com/count.js" async></script>
 </body>
 </html>

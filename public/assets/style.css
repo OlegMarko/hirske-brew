@@ -647,3 +647,12 @@ ul.slick-dots li button:after {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+.comments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#disqus_thread {
+    width: 80%;
+    max-width: 860px;
+}
