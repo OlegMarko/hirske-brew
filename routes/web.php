@@ -21,3 +21,6 @@ Route::get('/car-tour', 'SiteController@carTour');
 Route::resource('product', 'ProductController');
 
 Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+Route::post('/description', 'HomeController@setDescription');

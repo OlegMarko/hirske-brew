@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Settings;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -43,7 +44,13 @@ class SiteController extends Controller
      */
     public function about()
     {
-        return view('site.about');
+        $description = Settings::where('key', 'main_description')->first();
+        $descriptionTitle = Settings::where('key', 'description_title')->first();
+
+        return view('site.about', [
+            'description' => $description ? $description->value : 'Про нас',
+            'descriptionTitle' => $descriptionTitle ? $descriptionTitle->value : 'Броварня',
+        ]);
     }
 
     /**
