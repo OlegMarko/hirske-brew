@@ -3,7 +3,7 @@
 @section('content')
     <section class="section-block">
         <div class="video-container">
-            <video id="video-el" autoplay="autoplay" loop="loop" muted preload="auto" poster="{{ asset('assets/files/poster.jpg') }}" >
+            <video id="video-el" loop="loop" autoplay muted preload="auto" poster="{{ asset('assets/files/poster.png') }}" >
                 <source src="{{ asset('assets/files/puvovarna.webm') }}" type="video/webm"/>
                 <source src="{{ asset('assets/files/puvovarna.ogv') }}" type="video/ogg"/>
                 <source src="{{ asset('assets/files/puvovarna.mp4') }}" type="video/mp4"/>
