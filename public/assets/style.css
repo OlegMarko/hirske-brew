@@ -659,7 +659,7 @@ ul.slick-dots li button:after {
 
 .store {
     width: 80%;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 .g-i-tile {
     -webkit-box-sizing: border-box;
@@ -668,7 +668,7 @@ ul.slick-dots li button:after {
     border-bottom: 1px solid #eaeaea;
     float: left;
     width: 180px;
-    padding: 0 10px 1.84615em 4px;
+    padding: 0 10px 2em 10px;
     vertical-align: top;
 }
 .g-i-tile-catalog, .g-i-tile-catalog-promo {
@@ -682,11 +682,10 @@ ul.slick-dots li button:after {
 }
 .g-i-tile-i-title {
     font-size: 1em;
-    margin-top: 3.38462em;
+    margin-top: .38462em;
     margin-bottom: .76923em;
     position: relative;
     overflow: hidden;
-    max-height: 4.69231em;
 }
 .g-additional-price {
     margin-bottom: 10px;

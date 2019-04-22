@@ -21,9 +21,12 @@
                                         </div>
                                     </div>
                                     <div class="g-i-tile-i-title clearfix">
-                                        <a href="#">
-                                            Детский набор Luminarc Disney Frozen Winter Magic из 3 предметов (N5277)
-                                        </a>
+                                        <h3>Детский набор Luminarc</h3>
+                                        <span class="price">45грн</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, obcaecati,
+                                            sunt? Aut nulla, sapiente. Neque.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
