@@ -11,9 +11,6 @@
             <div class="slider-container-i" style="background-image: url({{ asset('assets/images/g6.jpg') }});"></div>
             <div class="slider-container-i" style="background-image: url({{ asset('assets/images/g7.jpg') }});"></div>
             <div class="slider-container-i" style="background-image: url({{ asset('assets/images/g8.jpg') }});"></div>
-            <div class="slider-container-i" style="background-image: url({{ asset('assets/images/g9.jpg') }});"></div>
-            <div class="slider-container-i" style="background-image: url({{ asset('assets/images/g10.jpg') }});"></div>
-            <div class="slider-container-i" style="background-image: url({{ asset('assets/images/g11.jpg') }});"></div>
         </div>
 
         <div class="gallery_buttons_position">

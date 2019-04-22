@@ -2,11 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use App\Settings;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
+    public $product;
+
+    public function __construct(Product $product)
+    {
+        $this->product = $product;
+    }
+
     /**
      * Return index page.
      *
@@ -60,7 +68,9 @@ class SiteController extends Controller
      */
     public function store()
     {
-        return view('site.store');
+        $products = $this->product->get();
+
+        return view('site.store', ['products' => $products]);
     }
 
     /**

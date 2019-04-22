@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Про пивовапню</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -31,6 +31,18 @@
                             <button type="submit" class="btn btn-primary">Зберегти</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center pt-5">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    Магазин
+
+                    <a href="{{ url('/product') }}" class="btn btn-success float-right">Всі товари</a>
                 </div>
             </div>
         </div>

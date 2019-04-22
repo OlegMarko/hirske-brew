@@ -7,7 +7,7 @@
         </div>
         <div class="about_qw">
             <div class="store">
-                @foreach([1, 2, 3, 4] as $item)
+                @foreach($products as $product)
                 <div class="g-i-tile g-i-tile-catalog">
                     <div class="over-wraper">
                         <div class="g-i-tile-i available">
@@ -16,17 +16,15 @@
                                     <div class="clearfix pos-fix">
                                         <div class="g-i-tile-i-image fix-height">
                                             <a href="#" class="responsive-img centering-child-img">
-                                                <img src="{{ asset('/assets/images/product.png') }}" alt="product" title="product">
+                                                <img src="{{ asset('storage/' . $product->file) }}" alt="product" title="product">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="g-i-tile-i-title clearfix">
-                                        <h3>Детский набор Luminarc</h3>
-                                        <span class="price">45грн</span>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, obcaecati,
-                                            sunt? Aut nulla, sapiente. Neque.
-                                        </p>
+                                        <h3>{{ $product->name }}</h3>
+                                        <span class="price">{{ $product->price }} грн</span>
+                                        <hr>
+                                        <p>{{ $product->description }}</p>
                                     </div>
                                 </div>
                             </div>
