@@ -31,12 +31,6 @@ header {
     z-index: 1000;
 }
 
-@media screen and (max-width: 90rem) {
-    header {
-        position: fixed;
-        top: 30px;
-    }
-}
 .row {
     max-width: 75rem;
     margin-left: auto;
@@ -46,12 +40,6 @@ header {
     max-width: 101.25rem;
     margin-left: auto;
     margin-right: auto;
-}
-@media screen and (max-width: 102.5rem) {
-    .main-container {
-        max-width: 100%;
-        padding: 0 4rem;
-    }
 }
 *, :after, :before {
     box-sizing: inherit;
@@ -88,12 +76,55 @@ header .button-container, header .logo {
 }
 header .button-container {
     display: none;
-    bottom: -130px;
+    bottom: -80px;
     width: 50px;
     height: 46px;
     background-color: #020202;
     border: 2px solid #0c0;
     border-top: none;
+}
+#toggle-nav {
+    padding: 22px 6px;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+#toggle-nav span, #ttoggle-nav span:after, #toggle-nav span:before {
+    cursor: pointer;
+    height: 2px;
+    width: 34px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: "";
+}
+#toggle-nav span, #toggle-nav span:after, #ttoggle-nav span:before {
+    transition: all .3s ease-in-out;
+}
+#toggle-nav span:before {
+    top: -10px;
+}
+#toggle-nav span:after {
+    bottom: -10px;
+}
+#toggle-nav.active span {
+    background-color: transparent;
+}
+#toggle-nav.active span:after, #toggle-nav.active span:before {
+    top: 0;
+}
+#toggle-nav.active span:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#toggle-nav.active span:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+header .header-container nav.open_menu .nav-l, header .header-container nav.open_menu .nav-r {
+    display: block;
 }
 header .header-container .nav-l, header .header-container .nav-r {
     height: 70px;
@@ -176,11 +207,6 @@ header .header-container ul {
     -ms-flex-pack: center;
     justify-content: center;
 }
-@media screen and (max-width: 90rem) {
-    header .header-container ul {
-        justify-content: space-around;
-    }
-}
 header .header-container .nav-l ul, header .header-container .nav-r ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -199,11 +225,6 @@ header .header-container ul li {
     margin: 0 2rem;
     padding: 0 10px;
     z-index: 2;
-}
-@media screen and (max-width: 90rem) {
-    header .header-container ul li {
-        margin: 0;
-    }
 }
 a {
     color: #2199e8;
@@ -249,6 +270,95 @@ header .button-container, header .logo {
     left: 0;
     right: 0;
     margin: auto;
+}
+@media screen and (max-width: 71.25rem) {
+    header .header-container nav {
+        display: block;
+        width: 225px;
+        background-color: transparent;
+        margin: auto;
+        height: auto;
+    }
+}
+@media screen and (max-width: 71.25rem) {
+    header .button-container {
+        display: block;
+    }
+}
+@media screen and (max-width: 71.25rem) {
+    header .header-container .nav-l, header .header-container .nav-r {
+        height: 100%;
+        width: 220px;
+        margin: 0 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 0 2px;
+        display: none;
+    }
+}
+@media screen and (max-width: 71.25rem) {
+    header .header-container .nav-l, header .header-container .nav-r {
+        height: 100%;
+        width: 220px;
+        margin: 0 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 0 2px;
+        display: none;
+    }
+}
+@media screen and (max-width: 71.25rem) {
+    header .header-container .left__nav ul, header .header-container .right__nav ul {
+        padding: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 216px;
+    }
+}
+@media screen and (max-width: 71.25rem) {
+    header .header-container .left__nav ul {
+        margin: 3.5rem auto 0;
+        padding: 2.8125rem 0 0;
+    }
+}
+@media screen and (max-width: 90rem) {
+    header .header-container ul li {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 71.25rem) {
+    header .header-container ul li {
+        display: block;
+        margin: .8rem 0 0;
+    }
+}
+@media screen and (max-width: 90rem) {
+    header .header-container ul li {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 90rem) {
+    header {
+        position: fixed;
+        top: 30px;
+    }
+}
+@media screen and (max-width: 90rem) {
+    header .header-container ul {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 102.5rem) {
+    .main-container {
+        max-width: 100%;
+        padding: 0 4rem;
+    }
 }
 body main {
     -webkit-box-flex: 1;
