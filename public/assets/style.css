@@ -84,7 +84,7 @@ header .button-container {
     border-top: none;
 }
 #toggle-nav {
-    padding: 22px 6px;
+    padding: 22px 8px;
     position: absolute;
     cursor: pointer;
     width: 100%;
@@ -283,6 +283,15 @@ header .button-container, header .logo {
 @media screen and (max-width: 71.25rem) {
     header .button-container {
         display: block;
+        top: 167px;
+        left: -15px;
+    }
+    header .open_menu {
+        z-index: 9;
+        border: 2px solid #0c0;
+    }
+    header .open_menu .button-container {
+        top: 180px;
     }
 }
 @media screen and (max-width: 71.25rem) {
@@ -301,14 +310,26 @@ header .button-container, header .logo {
 @media screen and (max-width: 71.25rem) {
     header .header-container .nav-l, header .header-container .nav-r {
         height: 100%;
-        width: 220px;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        padding: 0 2px;
+        padding: 0;
         display: none;
+    }
+    header .header-container .nav-r ul,
+    header .header-container .nav-l ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header .header-container .nav-l ul, header .header-container .nav-r ul {
+        flex-direction: column;
+        border: unset;
+    }
+    header .header-container ul li a {
+        padding: 8px 0;
     }
 }
 @media screen and (max-width: 71.25rem) {
